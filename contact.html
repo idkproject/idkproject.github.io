@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Contact
+</title>
+<style>
+body {
+width: 1200px;
+max-width: 95%;
+margin: auto;
+float: left;
+}
+header img {
+width: 100%;
+margin:auto;
+padding: 1%;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background:rgb(218,240,247);
+    height: 100%; 
+    position: fixed; 
+    overflow: auto; 
+}
+header li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    font-size: 17px;
+}
+form{
+align: left;
+padding: 8px 80px;
+}
+section{
+margin-left:18%;
+padding:10px 15px;
+}
+section h1{
+text-align: right;
+font-size: 18px;
+font-style: normal;
+font-variant: normal;
+font-weight: 700;
+line-height: 5px;
+color: rgb(218,240,247);
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #C3D1F7;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #6CF5F3;
+}
+
+div {
+    border-radius: 5px;
+    padding: 15px;
+    margin-left: 10%;
+}
+label {
+color: rgb(218,240,247);
+}
+</style>
+
+
+<link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+
+ 
+</head>
+
+<body background= "http://wallpapershome.com/images/pages/pic_h/1301.jpg">
+
+
+<header>
+
+<ul>
+<li><img src="img/logo.png" /></li>
+<li><a href="Hotel-homepage.jsp">Home</a></li>
+<li><a href="about.jsp">About</a></li>
+<li><a href="customer-form.jsp" >Sign Up</a></li>
+<li><a href="customer-form.jsp" >Book</a></li>
+<li><a href="rooms.html">Rooms</a></li>
+<li><a href="cancellation.html">Cancellation</a></li>
+<li><a href="contact.jsp">Contact</a></li>
+<li><a href= "index.jsp">Login</a></li>
+</ul>
+</header>
+<section><h1>FOR GENERAL ENQUIRIES and FURTHER INFORMATION, PLEASE CONTACT US:</h1>
+</section>
+  <form method="post" action= "contact-request.jsp">
+<div>
+
+
+    <label for="firstname">First Name</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lastname">Last Name</label>
+    <input type="text" id="lname" name="lastname">
+
+    <label for="subject">Subject</label>
+    <input type= "text" id="subject" name="subject">
+      
+    <label for="message">Message</label>
+    <input type= "text" style= "padding: 50px 80px" id="message" name="message"> 
+    
+    <input type="submit" value="Submit">
+ 
+</div>
+ </form>
+</body>
+</html>
